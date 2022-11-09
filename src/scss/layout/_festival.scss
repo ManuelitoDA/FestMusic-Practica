@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-festival {
+    padding: 5rem 0;
+
+    @include m.mediaQuery(v.$desktop) {
+        @include m.gridRepeat(2, 3rem);
+    }
+}
+
+.contenido-festival {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+
+    @include m.mediaQuery(v.$desktop) {
+        padding-top: 0;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .fecha {
+        color: v.$rosa;
+        font-weight: bold;
+    }
+}

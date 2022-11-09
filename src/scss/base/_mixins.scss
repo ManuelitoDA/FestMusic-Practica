@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+@mixin mediaQuery($minWidth) {
+    @media (min-width: $minWidth) {
+        @content;
+    }
+}
+
+@mixin gridRepeat($columns, $separacion) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $separacion;
+}
+
+@mixin resetList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+
+//BackGrouds
+
+.bg-amarillo {
+    background-color: v.$amarillo;
+}
+
+.bg-verde {
+    background-color: v.$verde;
+}
